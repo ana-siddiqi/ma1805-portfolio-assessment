@@ -1,27 +1,29 @@
-let person = 55;
-let cold = false
-let home;
-let kitchen = "red is a great colour"
-console.log(home)
-let x;
-let y;
+let circleX = 0;
+let circleY = 150;
+let circleSize = 64;
+let speed = 4;
 
 function setup() {
-  createCanvas(600, 400);
-  let pet = "cat is big fgfgfg fgfgfg"
-  x = random(0, 600)
-  y = random(0, 400)
+ createCanvas(400, 300);
+ background(0);
 }
 
 function draw() {
-  background(220);
-  //circle
-  fill(0, 255, 0);
-  circle(x, y, 50);
-  person = height/2;
-  console.log(person)
-  // The text
-  fill(255, 0, 0);
-  textSize(30);
-  text(kitchen, 100, 100)
+ background(153, 235, 255);
+ noStroke();
+ fill(255, 255, 77);
+ circle(circleX, circleY, circleSize);
+ 
+
+ circleX += speed;
+
+  if (circleX - circleSize/2 > width){
+  circleX =-circleSize/2;
+ }
+
+}
+
+function mousePressed(){
+  background(0);
+  circleX = 0;
 }
