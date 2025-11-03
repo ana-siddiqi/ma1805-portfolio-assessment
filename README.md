@@ -15,7 +15,7 @@ What I did for this part of my project was creating a blue sky background with a
 
 [03.Multiples](03.multiples/index.html)
 
-For this mini project I created overlapping circles that follow the mouse around the screen and with a simple click of the mouse, the colour of the circles change colour. This was quite challenging because this was only my second time using the mouse function but once I got it to work, it became easier. Furthermore, this project was also a metaphor for media, the different circles connoting to various kinds of media. This illustrates that no matter what form of media you are accessing, media is constant and always running. 
+For this mini project I created overlapping circles that follow the mouse around the screen and with a simple click of the mouse, the colour of the circles change colour. This was quite challenging because this was only my second time using the mouse function but once I got it to work, it became easier. Furthermore, this project was also a metaphor for media, the different circles connoting to various kinds of media. This illustrates that no matter what form of media you are accessing, media is constant and always running. Additionally, I thought about how people perceive colours, and the beginning colours are very light and colourful, and as you keep playing with the mouse, the colours start to get a bit darker (nothing very drastic) it represents how media can turn dark very fast, portraying the two sides of media. It is fun and playful on the surface, but as you begin to peel each layer, the more the concealed elements are revealed. Media can juxtapose itself as it is a very sophisticated, dynamic and complex establishment.
 
 
 [04.Media](04.media/index.html)
