@@ -1,32 +1,41 @@
-let rgb = [255, 0, 0];
-let select = 0;
+let select = 0; 
+let size = 30; 
+let rgba = [255, 255, 100, 180];
+
+const colors = [
+  [255, 255, 100, 180],
+  [173, 216, 230, 180],
+  [255, 182, 193, 180],
+  [240, 230, 140, 180],
+  [230, 230, 250, 180]
+];
+
 
 function setup() {
-  createCanvas(400, 400);
+  noStroke(); 
+  createCanvas(800, 800);
+  background(135, 206, 235);
 }
 
 function draw() {
-  background(220);
+  fill(rgba);
+  ellipse(mouseX, mouseY, size, size);
+  if(select!=2){
+    size = random(20, 100);
+  }
+}
+
+function mouseClicked() {
+  
+   console.log('select: '+select); 
+  
+  rgba[select] = random(0,155); 
+  rgba[3] = random(120, 200);
+  select++; 
  
-  fill(rgb);
-  if(select == 1){
-    rgb = [0, 255, 0];
-  }else{
-  rgb = [255, random(255), 0]
+  if(select >= 3){ 
+    console.log('reset select'); 
+    select = 0; 
   }
-
-for(let i=0; i<=500; i=i+1+3){
- r = random(10)
- circle(120+r+mouseX, 30+i, i);
-}
-let words = ["a","list","of","words"]
- textSize(30)
- text(words[3], 10, 50)
-}
-
-function mouseClicked(){
-  if(select == 0){
-    select = 1;
-
-  }
+  return false; 
 }
